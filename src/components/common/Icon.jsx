@@ -1,0 +1,66 @@
+import {
+  ArrowRight,
+  BadgeCheck,
+  Building2,
+  Cable,
+  CalendarCheck,
+  CheckCircle2,
+  ChevronDown,
+  Circle,
+  ClipboardCheck,
+  Clock,
+  Fan,
+  Grid3X3,
+  Hammer,
+  Home,
+  Landmark,
+  Mail,
+  MapPin,
+  Menu,
+  Paintbrush,
+  Phone,
+  ScanSearch,
+  Send,
+  ShieldCheck,
+  Siren,
+  Sparkles,
+  UsersRound,
+  Wrench,
+  X
+} from "lucide-react";
+
+const Icons = {
+  ArrowRight,
+  BadgeCheck,
+  Building2,
+  Cable,
+  CalendarCheck,
+  CheckCircle2,
+  ChevronDown,
+  Circle,
+  ClipboardCheck,
+  Clock,
+  Fan,
+  Grid3X3,
+  Hammer,
+  Home,
+  Landmark,
+  Mail,
+  MapPin,
+  Menu,
+  Paintbrush,
+  Phone,
+  ScanSearch,
+  Send,
+  ShieldCheck,
+  Siren,
+  Sparkles,
+  UsersRound,
+  Wrench,
+  X
+};
+
+export default function Icon({ name = "Circle", size = 22, className = "", ...props }) {
+  const LucideIcon = Icons[name] || Icons.Circle;
+  return <LucideIcon aria-hidden="true" size={size} className={className} {...props} />;
+}
