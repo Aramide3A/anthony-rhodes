@@ -1,6 +1,12 @@
 import Button from "./Button.jsx";
 
-export default function PageHero({ eyebrow, title, description, image, cta, secondaryCta }) {
+export default function PageHero({
+  title,
+  description,
+  image,
+  cta,
+  secondaryCta
+}) {
   return (
     <section className="page-hero">
       <div className="hero-media" aria-hidden="true">
@@ -8,7 +14,6 @@ export default function PageHero({ eyebrow, title, description, image, cta, seco
       </div>
       <div className="hero-overlay" />
       <div className="container page-hero-content">
-        {eyebrow && <p className="eyebrow light">{eyebrow}</p>}
         <h1>{title}</h1>
         <p>{description}</p>
         {(cta || secondaryCta) && (

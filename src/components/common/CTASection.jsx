@@ -9,8 +9,7 @@ export default function CTASection({
   return (
     <section className="cta-section">
       <div className="container cta-inner">
-        <div>
-          <p className="eyebrow light">Start a conversation</p>
+        <div className="cta-copy">
           <h2>{title}</h2>
           <p>{description}</p>
         </div>

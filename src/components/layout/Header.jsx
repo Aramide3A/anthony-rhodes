@@ -4,6 +4,7 @@ import { navigationLinks, serviceNavigationLinks } from "../../data/navigation.j
 import Button from "../common/Button.jsx";
 import Icon from "../common/Icon.jsx";
 import MobileMenu from "./MobileMenu.jsx";
+import logo from "../../assets/images/logo.png";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,11 +24,7 @@ export default function Header() {
       <a className="skip-link" href="#main-content">Skip to content</a>
       <div className="container header-inner">
         <Link to="/" className="brand" aria-label="AnthonyRhodes Facility Management home">
-          <span className="brand-mark">AR</span>
-          <span>
-            <strong>AnthonyRhodes</strong>
-            <small>Facility Management</small>
-          </span>
+          <img src={logo} alt="AnthonyRhodes Facility Management" />
         </Link>
         <nav className="desktop-nav" aria-label="Primary navigation">
           {navigationLinks.map((link) =>

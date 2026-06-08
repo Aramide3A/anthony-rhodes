@@ -13,6 +13,7 @@ export default function HSEQualityPreview() {
             eyebrow="HSE & Quality"
             title="Safety-focused operations and quality-managed delivery"
             description="Safety is central to how AnthonyRhodes works. The company prioritizes the wellbeing of employees, contractors, clients, visitors, and personnel under supervision."
+            variant="editorial"
           />
           <p>
             Quality management is supported by strategic planning, experienced personnel,

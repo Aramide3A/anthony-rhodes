@@ -7,10 +7,9 @@ export default function ServicesPreview({ limit = 6 }) {
     <section className="section alt">
       <div className="container">
         <SectionHeader
-          eyebrow="Core services"
-          title="A broad range of services for modern facilities"
+          eyebrow="Featured capabilities"
+          title="Operational services shaped around premium property standards"
           description="From MEP and HVAC to cleaning, security support, renovation, and infrastructure maintenance, AnthonyRhodes provides practical services for different property types."
-          align="center"
         />
         <div className="card-grid">
           {services.slice(0, limit).map((service) => (

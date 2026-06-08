@@ -22,8 +22,9 @@ export default function Home() {
           <div>
             <SectionHeader
               eyebrow="Facility management"
-              title="Hard and soft services under one accountable partner"
+              title="Hard and soft services curated under one accountable operating partner"
               description="AnthonyRhodes supports property owners, developers, estate managers, and corporate organizations with services that keep built environments safe, clean, efficient, and functional."
+              variant="editorial"
             />
             <div className="mini-card-grid">
               {homeFacilityServices.slice(0, 4).map((service) => (
@@ -42,8 +43,9 @@ export default function Home() {
           <div>
             <SectionHeader
               eyebrow="Real estate and property development"
-              title="Support for functional, secure, and attractive developments"
+              title="Support for developments that must feel functional, secure, and enduring"
               description="The company’s real estate services include project development, project management, project financing, leasing, strategic planning and procurement, sales services, architectural designs, land survey, and asset management."
+              variant="editorial"
             />
           </div>
         </div>
@@ -74,6 +76,7 @@ export default function Home() {
             eyebrow="Clients & partners"
             title="Reliable support for property stakeholders"
             description="AnthonyRhodes supports property owners, estate managers, developers, commercial property teams, public and private buildings, and real estate investors with facility management and property support services."
+            variant="editorial"
           />
           <div className="partner-panel">
             <span>Property owners</span>
@@ -88,9 +91,10 @@ export default function Home() {
       <section className="section contact-preview">
         <div className="container split-grid">
           <SectionHeader
-            eyebrow="Quick inquiry"
-            title="Tell us what your property needs"
+            eyebrow="Consultation"
+            title="Tell us what your property needs next"
             description="Use the form to prepare a facility management, project, maintenance, or development inquiry."
+            variant="editorial"
           />
           <ContactForm />
         </div>

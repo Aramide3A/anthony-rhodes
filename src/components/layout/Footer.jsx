@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { footerServiceLinks, navigationLinks } from "../../data/navigation.js";
 import { contactDetails } from "../../data/contact.js";
+import logo from "../../assets/images/logo.png";
 
 export default function Footer() {
   const quickLinks = navigationLinks.filter((link) =>
@@ -12,12 +13,9 @@ export default function Footer() {
       <div className="container footer-grid">
         <div className="footer-brand">
           <Link to="/" className="brand">
-            <span className="brand-mark">AR</span>
-            <span>
-              <strong>AnthonyRhodes</strong>
-              <small>Facility Management</small>
-            </span>
+            <img src={logo} alt="AnthonyRhodes Facility Management" />
           </Link>
+          <span className="footer-kicker">Integrated property operations</span>
           <p>
             AnthonyRhodes delivers integrated facility management, maintenance, real estate
             development, and property support services for modern residential, commercial, and
