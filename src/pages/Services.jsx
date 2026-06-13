@@ -31,7 +31,6 @@ export default function Services() {
         </div>
       </section>
       <MaintenanceApproach />
-      <CTASection />
     </>
   );
 }

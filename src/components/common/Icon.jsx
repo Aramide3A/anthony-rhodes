@@ -1,6 +1,7 @@
 import {
   ArrowRight,
   BadgeCheck,
+  Bug,
   Building2,
   Cable,
   CalendarCheck,
@@ -24,14 +25,17 @@ import {
   ShieldCheck,
   Siren,
   Sparkles,
+  TreePine,
   UsersRound,
   Wrench,
-  X
+  X,
+  Zap
 } from "lucide-react";
 
 const Icons = {
   ArrowRight,
   BadgeCheck,
+  Bug,
   Building2,
   Cable,
   CalendarCheck,
@@ -55,9 +59,11 @@ const Icons = {
   ShieldCheck,
   Siren,
   Sparkles,
+  TreePine,
   UsersRound,
   Wrench,
-  X
+  X,
+  Zap
 };
 
 export default function Icon({ name = "Circle", size = 22, className = "", ...props }) {

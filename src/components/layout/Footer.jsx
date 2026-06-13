@@ -5,7 +5,7 @@ import logo from "../../assets/images/logo.png";
 
 export default function Footer() {
   const quickLinks = navigationLinks.filter((link) =>
-    ["/about", "/services", "/hse-quality", "/projects", "/contact"].includes(link.path)
+    ["/about", "/services", "/projects", "/contact"].includes(link.path)
   );
 
   return (
@@ -52,7 +52,6 @@ export default function Footer() {
       </div>
       <div className="container footer-bottom">
         <span>Copyright {new Date().getFullYear()} AnthonyRhodes Facility Management.</span>
-        <span>ISO HSEQ Certified</span>
       </div>
     </footer>
   );

@@ -3,10 +3,10 @@ import SectionHeader from "../components/common/SectionHeader.jsx";
 import CTASection from "../components/common/CTASection.jsx";
 import TrustBadge from "../components/common/TrustBadge.jsx";
 import MaintenanceApproach from "../components/sections/MaintenanceApproach.jsx";
-import HSEQualityPreview from "../components/sections/HSEQualityPreview.jsx";
 import Icon from "../components/common/Icon.jsx";
 import { facilityCoverage, facilityServices, industriesServed } from "../data/services.js";
 import { images } from "../data/images.js";
+import proj from '../assets/images/proj-dev.jpg'
 
 export default function FacilityManagement() {
   return (
@@ -15,9 +15,7 @@ export default function FacilityManagement() {
         eyebrow="Facility Management"
         title="Integrated hard and soft services for modern properties"
         description="We provide integrated hard and soft facility management services that help property owners, developers, estate managers, and corporate organizations maintain safe, efficient, and functional environments."
-        image={images.facility}
-        cta={{ label: "Request a Quote", path: "/contact", icon: "Send" }}
-        secondaryCta={{ label: "View All Services", path: "/services", icon: "Grid3X3" }}
+        image={proj}
       />
       <section className="section">
         <div className="container content-grid">
@@ -32,7 +30,7 @@ export default function FacilityManagement() {
             Its service approach is positioned to reduce costs while improving standards and
             operational efficiency.
           </p>
-          <TrustBadge title="ISO 9001 | OHSAS 18001 | ISO 14001" />
+          <TrustBadge className="trust-badge-red" title="ISO 9001 | OHSAS 18001 | ISO 14001" />
         </div>
       </section>
       <section className="section alt">
@@ -70,7 +68,7 @@ export default function FacilityManagement() {
           </div>
         </div>
       </section>
-      <section className="section alt">
+      {/* <section className="section alt">
         <div className="container">
           <SectionHeader
             eyebrow="Industries we serve"
@@ -87,10 +85,8 @@ export default function FacilityManagement() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
       <MaintenanceApproach />
-      <HSEQualityPreview />
-      <CTASection />
     </>
   );
 }

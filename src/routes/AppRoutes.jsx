@@ -5,7 +5,6 @@ import Services from "../pages/Services.jsx";
 import FacilityManagement from "../pages/FacilityManagement.jsx";
 import RealEstateDevelopment from "../pages/RealEstateDevelopment.jsx";
 import ProjectManagement from "../pages/ProjectManagement.jsx";
-import HSEQuality from "../pages/HSEQuality.jsx";
 import Projects from "../pages/Projects.jsx";
 import Contact from "../pages/Contact.jsx";
 import NotFound from "../pages/NotFound.jsx";
@@ -19,7 +18,6 @@ export default function AppRoutes() {
       <Route path="/services/facility-management" element={<FacilityManagement />} />
       <Route path="/services/real-estate-development" element={<RealEstateDevelopment />} />
       <Route path="/services/project-management" element={<ProjectManagement />} />
-      <Route path="/hse-quality" element={<HSEQuality />} />
       <Route path="/projects" element={<Projects />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="*" element={<NotFound />} />

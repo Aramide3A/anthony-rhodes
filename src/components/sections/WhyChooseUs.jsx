@@ -4,7 +4,7 @@ import SectionHeader from "../common/SectionHeader.jsx";
 
 export default function WhyChooseUs() {
   return (
-    <section className="section">
+    <section className="section why-choose-us">
       <div className="container split-grid compact">
         <SectionHeader
           eyebrow="Why choose AnthonyRhodes"

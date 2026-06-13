@@ -12,7 +12,7 @@ export default function Contact() {
         eyebrow="Contact"
         title="Request a quote or start a service inquiry"
         description="Tell AnthonyRhodes about your facility management, maintenance, project management, or real estate development needs."
-        image={images.facility}
+        image={images.hero}
       />
       <section className="section">
         <div className="container contact-grid">

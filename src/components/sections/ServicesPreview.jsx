@@ -4,7 +4,7 @@ import ServiceCard from "../common/ServiceCard.jsx";
 
 export default function ServicesPreview({ limit = 6 }) {
   return (
-    <section className="section alt">
+    <section className="section alt home-services">
       <div className="container">
         <SectionHeader
           eyebrow="Featured capabilities"

@@ -55,6 +55,7 @@ export default function HomeHero() {
             <Button to="/contact" icon="Send" className="hero-inquiry-action">Start an Inquiry</Button>
           </div>
           <TrustBadge
+            className="trust-badge-red-icon"
             title="ISO HSEQ Certified"
             description="Safety, quality, and accountable service delivery are central to how AnthonyRhodes works."
           />

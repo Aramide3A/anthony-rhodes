@@ -1,4 +1,4 @@
-import { images } from "../../data/images.js";
+import image from "../../assets/images/rhodes-1.jpg";
 import Button from "../common/Button.jsx";
 import SectionHeader from "../common/SectionHeader.jsx";
 
@@ -18,19 +18,9 @@ export default function AboutPreview() {
             maintenance, cleaning, security support, technical operations, turnkey solutions, and
             consultancy. Deep technical expertise sits at the center of the company’s service model.
           </p>
-          <div className="editorial-metrics">
-            <div>
-              <strong>Integrated</strong>
-              <span>technical and soft services</span>
-            </div>
-            <div>
-              <strong>Accountable</strong>
-              <span>operational oversight</span>
-            </div>
-          </div>
           <Button to="/about" icon="ArrowRight">More About Us</Button>
         </div>
-        <img className="rounded-image" src={images.facility} alt="Facility technician inspecting building systems" loading="lazy" />
+        <img className="rounded-image" src={image} alt="Facility technician inspecting building systems" loading="lazy" />
       </div>
     </section>
   );
