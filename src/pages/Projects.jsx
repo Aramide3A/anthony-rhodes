@@ -9,6 +9,9 @@ import rockmould from '../assets/images/partners/rockmould.jpeg'
 import Venco from '../assets/images/partners/venco.png'
 import IFMA from '../assets/images/partners/IFMA_logo.jpg'
 import Iobotech from '../assets/images/partners/iobotech_limited_logo.jpeg'
+import pinemain2 from '../assets/images/partners/pinemain2.jpg'
+import cooplag from '../assets/images/partners/cooplag.jpeg'
+import urban from '../assets/images/partners/urban-prime.jpeg'
 import { images } from '../data/images.js'
 import {
     industriesServed,
@@ -20,14 +23,14 @@ const clients = [
     { name: 'Lotus Apartments', logo: lotusLogo },
     { name: 'IPDC', logo: ipdcLogo },
     { name: 'Rockmould', logo: rockmould },
-    { name: 'Pinecourt Apartments' },
+    { name: 'Pinecourt Apartments', logo: pinemain2 },
+    { name: 'Cooplag Estate', logo: cooplag },
+    { name: 'Urban Prime Estates', logo: urban },
     { name: 'Dej Apartments' },
     { name: 'Premium Apartments' },
     { name: 'Premium Homes' },
     { name: 'Triangle Apartments' },
-    { name: 'Cooplag Estate' },
     { name: 'SandStone Apartments' },
-    { name: 'Urban Prime Estates' },
     { name: 'Pleasant Apartments' },
     { name: 'D.F GEO Engineering' },
 ]

@@ -1,6 +1,5 @@
 export const contactDetails = {
-  email: "info@anthonyrhodes.org",
-  emails: ["info@anthonyrhodes.org", "info@anthonyrhodes.net"],
+  emails: ["info@anthonyrhodes.net"],
   phone: "+23408062638359",
   phones: [
     "+23408062638359",

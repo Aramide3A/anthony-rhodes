@@ -364,6 +364,39 @@ textarea {
   object-fit: cover;
 }
 
+.hero-slider img {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 900ms ease;
+}
+
+.hero-slider img.is-active {
+  opacity: 1;
+}
+
+.hero-slide-button {
+  position: absolute;
+  right: 32px;
+  bottom: 32px;
+  z-index: 2;
+  width: 48px;
+  height: 48px;
+  display: inline-grid;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.42);
+  border-radius: 999px;
+  color: var(--white);
+  background: rgba(36, 36, 40, 0.5);
+  cursor: pointer;
+  transition: background 180ms ease, border-color 180ms ease;
+}
+
+.hero-slide-button:hover {
+  background: rgba(179, 34, 36, 0.88);
+  border-color: rgba(255, 255, 255, 0.76);
+}
+
 .hero-overlay {
   background: linear-gradient(90deg, rgba(36, 36, 40, 0.82), rgba(36, 36, 40, 0.62), rgba(36, 36, 40, 0.28));
 }
@@ -732,6 +765,26 @@ h1 {
   color: var(--white);
 }
 
+.image-list-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.image-list-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.image-list-card h2,
+.image-list-card h3 {
+  margin: 0;
+  padding: 18px 20px 20px;
+}
+
 .feature-block h2 {
   color: var(--green);
 }
@@ -797,6 +850,10 @@ h1 {
 .media-band .rounded-image,
 .split-section .rounded-image {
   aspect-ratio: 5 / 4;
+}
+
+.facility-image {
+  border-radius: 10px;
 }
 
 .maintenance-section {
@@ -1325,6 +1382,13 @@ h1 {
   .cta-actions {
     flex-direction: column;
     align-items: stretch;
+  }
+
+  .hero-slide-button {
+    right: 18px;
+    bottom: 18px;
+    width: 44px;
+    height: 44px;
   }
 
   .card-grid,

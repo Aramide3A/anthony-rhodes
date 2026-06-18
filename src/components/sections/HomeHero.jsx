@@ -1,6 +1,10 @@
+import { useEffect, useState } from "react";
 import { images } from "../../data/images.js";
 import Button from "../common/Button.jsx";
+import Icon from "../common/Icon.jsx";
 import TrustBadge from "../common/TrustBadge.jsx";
+import slider_2 from "../../assets/images/slider-2.jpg";
+import slider_3 from '../../assets/images/slide-3.jpg'
 
 const heroStats = [
   { value: "24/7", label: "Response coordination" },
@@ -8,11 +12,34 @@ const heroStats = [
   { value: "HSEQ", label: "quality-led operations" }
 ];
 
+const heroSlides = [images.hero, slider_2, slider_3]
+
 export default function HomeHero() {
+  const [activeImage, setActiveImage] = useState(0);
+
+  useEffect(() => {
+    const timer = window.setInterval(() => {
+      setActiveImage((current) => (current + 1) % heroSlides.length);
+    }, 3000);
+
+    return () => window.clearInterval(timer);
+  }, []);
+
+  const showNextImage = () => {
+    setActiveImage((current) => (current + 1) % heroSlides.length);
+  };
+
   return (
     <section className="home-hero">
-      <div className="hero-media" aria-hidden="true">
-        <img src={images.hero} alt="" />
+      <div className="hero-media hero-slider" aria-hidden="true">
+        {heroSlides.map((heroImage, index) => (
+          <img
+            key={heroImage}
+            className={index === activeImage ? "is-active" : ""}
+            src={heroImage}
+            alt=""
+          />
+        ))}
       </div>
       <div className="hero-overlay" />
       <div className="container home-hero-content">
@@ -61,6 +88,14 @@ export default function HomeHero() {
           />
         </div>
       </div>
+      <button
+        className="hero-slide-button"
+        type="button"
+        aria-label="Show next hero image"
+        onClick={showNextImage}
+      >
+        <Icon name="ArrowRight" size={22} />
+      </button>
     </section>
   );
 }

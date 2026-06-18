@@ -34,9 +34,9 @@ export default function RealEstateDevelopment() {
       <section className="section alt">
         <div className="container service-list-grid">
           {realEstateServices.map((service) => (
-            <article key={service} className="list-card">
-              <Icon name="Landmark" />
-              <h2>{service}</h2>
+            <article key={service.title} className="list-card image-list-card">
+              <img src={service.image} alt={service.alt} loading="lazy" />
+              <h2>{service.title}</h2>
             </article>
           ))}
         </div>

@@ -38,14 +38,13 @@ export default function FacilityManagement() {
           <SectionHeader
             eyebrow="Hard and soft services"
             title="Facility services AnthonyRhodes provides"
-            description="These services are preserved from the old site and rewritten for clarity."
             align="center"
           />
           <div className="service-list-grid">
             {facilityServices.map((service) => (
-              <article key={service} className="list-card">
-                <Icon name="CheckCircle2" />
-                <h3>{service}</h3>
+              <article key={service.title} className="list-card image-list-card">
+                <img src={service.image} alt={service.alt} loading="lazy" />
+                <h3>{service.title}</h3>
               </article>
             ))}
           </div>

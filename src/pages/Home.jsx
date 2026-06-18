@@ -9,6 +9,7 @@ import WhyChooseUs from '../components/sections/WhyChooseUs.jsx'
 import ContactCTA from '../components/sections/ContactCTA.jsx'
 import Icon from '../components/common/Icon.jsx'
 import proj from '../assets/images/proj-dev.jpg'
+import home from '../assets/images/home-1.JPG'
 import {
     facilityCoverage,
     homeFacilityServices,
@@ -22,6 +23,24 @@ export default function Home() {
             <HomeHero />
             <ServicesPreview />
             <AboutPreview />
+            <section className="section alt">
+                <div className="container split-grid">
+                    <img
+                        className="rounded-image"
+                        src={proj}
+                        alt="Modern residential estate development"
+                        loading="lazy"
+                    />
+                    <div>
+                        <SectionHeader
+                            eyebrow="Real estate and property development"
+                            title="Support for developments that must feel functional, secure, and enduring"
+                            description="The company’s real estate services include project development, project management, project financing, leasing, strategic planning and procurement, sales services, architectural designs, land survey, and asset management."
+                            variant="editorial"
+                        />
+                    </div>
+                </div>
+            </section>
             <section className="section media-band">
                 <div className="container split-grid">
                     <div>
@@ -44,29 +63,11 @@ export default function Home() {
                         </div>
                     </div>
                     <img
-                        className="rounded-image"
-                        src={images.cleaning}
+                        className="facility-image"
+                        src={home}
                         alt="Facility cleaning team preparing a commercial space"
                         loading="lazy"
                     />
-                </div>
-            </section>
-            <section className="section alt">
-                <div className="container split-grid">
-                    <img
-                        className="rounded-image"
-                        src={proj}
-                        alt="Modern residential estate development"
-                        loading="lazy"
-                    />
-                    <div>
-                        <SectionHeader
-                            eyebrow="Real estate and property development"
-                            title="Support for developments that must feel functional, secure, and enduring"
-                            description="The company’s real estate services include project development, project management, project financing, leasing, strategic planning and procurement, sales services, architectural designs, land survey, and asset management."
-                            variant="editorial"
-                        />
-                    </div>
                 </div>
             </section>
             <MaintenanceApproach />
