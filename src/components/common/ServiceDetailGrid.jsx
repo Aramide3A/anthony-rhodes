@@ -70,7 +70,7 @@ export default function ServiceDetailGrid({ services, titleAs: TitleTag = "h3" }
               <img src={activeService.image} alt={activeService.alt} />
             </div>
             <div className="service-modal-body">
-              <p className="service-modal-kicker">AnthonyRhodes service details</p>
+              {/* <p className="service-modal-kicker">AnthonyRhodes service details</p> */}
               <h2 id={titleId}>{activeService.title}</h2>
               {activeService.details.summary.map((paragraph) => (
                 <p key={paragraph}>{paragraph}</p>
