@@ -1,12 +1,11 @@
 import PageHero from "../components/common/PageHero.jsx";
 import SectionHeader from "../components/common/SectionHeader.jsx";
-import CTASection from "../components/common/CTASection.jsx";
 import TrustBadge from "../components/common/TrustBadge.jsx";
 import MaintenanceApproach from "../components/sections/MaintenanceApproach.jsx";
 import Icon from "../components/common/Icon.jsx";
-import { facilityCoverage, facilityServices, industriesServed } from "../data/services.js";
-import { images } from "../data/images.js";
-import proj from '../assets/images/proj-dev.jpg'
+import ServiceDetailGrid from "../components/common/ServiceDetailGrid.jsx";
+import { facilityCoverage, facilityServices } from "../data/services.js";
+import proj from "../assets/images/proj-dev.jpg";
 
 export default function FacilityManagement() {
   return (
@@ -38,16 +37,10 @@ export default function FacilityManagement() {
           <SectionHeader
             eyebrow="Hard and soft services"
             title="Facility services AnthonyRhodes provides"
+            description="Hover, focus or tap any service card to open source-backed details from the legacy AnthonyRhodes facility pages."
             align="center"
           />
-          <div className="service-list-grid">
-            {facilityServices.map((service) => (
-              <article key={service.title} className="list-card image-list-card">
-                <img src={service.image} alt={service.alt} loading="lazy" />
-                <h3>{service.title}</h3>
-              </article>
-            ))}
-          </div>
+          <ServiceDetailGrid services={facilityServices} />
         </div>
       </section>
       <section className="section">
@@ -67,24 +60,6 @@ export default function FacilityManagement() {
           </div>
         </div>
       </section>
-      {/* <section className="section alt">
-        <div className="container">
-          <SectionHeader
-            eyebrow="Industries we serve"
-            title="Technical facility services across multiple environments"
-            description="The source site lists these industries and environments as part of AnthonyRhodes’ service reach."
-            align="center"
-          />
-          <div className="service-list-grid">
-            {industriesServed.map((industry) => (
-              <article key={industry} className="list-card">
-                <Icon name="Building2" />
-                <h3>{industry}</h3>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section> */}
       <MaintenanceApproach />
     </>
   );

@@ -4,6 +4,7 @@ import CTASection from "../components/common/CTASection.jsx";
 import BenefitCard from "../components/common/BenefitCard.jsx";
 import TrustBadge from "../components/common/TrustBadge.jsx";
 import Icon from "../components/common/Icon.jsx";
+import ServiceDetailGrid from "../components/common/ServiceDetailGrid.jsx";
 import { facilityCoverage, realEstateServices, realEstateValuePropositions } from "../data/services.js";
 import { images } from "../data/images.js";
 
@@ -32,13 +33,14 @@ export default function RealEstateDevelopment() {
         </div>
       </section>
       <section className="section alt">
-        <div className="container service-list-grid">
-          {realEstateServices.map((service) => (
-            <article key={service.title} className="list-card image-list-card">
-              <img src={service.image} alt={service.alt} loading="lazy" />
-              <h2>{service.title}</h2>
-            </article>
-          ))}
+        <div className="container">
+          <SectionHeader
+            eyebrow="Service range"
+            title="Real estate services AnthonyRhodes provides"
+            description="Hover, focus or tap any service card to open details sourced from the legacy AnthonyRhodes real estate pages."
+            align="center"
+          />
+          <ServiceDetailGrid services={realEstateServices} titleAs="h2" />
         </div>
       </section>
       <section className="section">
