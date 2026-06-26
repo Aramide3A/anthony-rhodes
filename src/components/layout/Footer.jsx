@@ -2,11 +2,14 @@ import { Link } from "react-router-dom";
 import { footerServiceLinks, navigationLinks } from "../../data/navigation.js";
 import { contactDetails } from "../../data/contact.js";
 import logo from "../../assets/images/logo.png";
+import { getPhoneHref, getWhatsAppHref } from "../../utils/contact.js";
 
 export default function Footer() {
   const quickLinks = navigationLinks.filter((link) =>
     ["/about", "/services", "/projects", "/contact"].includes(link.path)
   );
+  const footerPhone = contactDetails.phone;
+  const whatsappHref = getWhatsAppHref(footerPhone);
 
   return (
     <footer className="site-footer">
@@ -36,8 +39,15 @@ export default function Footer() {
         </div>
         <div>
           <h2>Contact</h2>
-          {contactDetails.phone && (
-            <a href={`tel:${contactDetails.phone.replace(/\s/g, "")}`}>{contactDetails.phone}</a>
+          {footerPhone && (
+            <>
+              <a href={getPhoneHref(footerPhone)}>{footerPhone}</a>
+              {whatsappHref && (
+                <a href={whatsappHref} target="_blank" rel="noreferrer">
+                  Chat on WhatsApp
+                </a>
+              )}
+            </>
           )}
           {contactDetails.emails?.map((email) => (
             <a key={email} href={`mailto:${email}`}>{email}</a>
